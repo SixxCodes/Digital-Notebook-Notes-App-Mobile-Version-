@@ -1,6 +1,6 @@
-# notes
+# ThoughtNest (Notes App) Mobile version 
 
-A new Flutter project.
+Dart & Flutter on VSCode
 
 ## Getting Started
 
