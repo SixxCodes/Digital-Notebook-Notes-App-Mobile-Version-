@@ -1,6 +1,8 @@
 # ThoughtNest (Notes App) Mobile version 
 
-Dart & Flutter on VSCode
+* Dart & Flutter
+* Firebase?
+* VSCode
 
 ### Status: 
 * Ongoing
