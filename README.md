@@ -2,7 +2,7 @@
 
 * Dart & Flutter
 * Firebase?
-* VSCode
+* VSCode (|| Android Studios maybe)
 
 ### Status: 
 * Ongoing
