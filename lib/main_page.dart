@@ -19,8 +19,12 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Thoughtnest"),
-        actions: [IconButton(onPressed: () {}, icon: FaIcon(FontAwesomeIcons.rightFromBracket),
-        )],
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: FaIcon(FontAwesomeIcons.rightFromBracket),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton.large(
         onPressed: () {}, 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 import 'main_page.dart';
 
 void main() {
@@ -15,6 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown),
         useMaterial3: true,
+        appBarTheme: Theme.of(context).appBarTheme.copyWith(
+          backgroundColor: Colors.transparent, titleTextStyle: TextStyle(
+            color: primary, 
+            fontSize: 32,
+          ),
+        ),
       ),
       home: const MainPage(),
     );
