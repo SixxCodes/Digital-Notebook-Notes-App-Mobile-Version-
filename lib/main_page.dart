@@ -10,6 +10,10 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+
+  final List<String> dropdownOptions = ["Date modified", "Date created"];
+  late String dropdownValue = dropdownOptions.first;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +21,10 @@ class _MainPageState extends State<MainPage> {
         title: Text("Thoughtnest"),
         actions: [IconButton(onPressed: () {}, icon: FaIcon(FontAwesomeIcons.rightFromBracket),
         )],
+      ),
+      floatingActionButton: FloatingActionButton.large(
+        onPressed: () {}, 
+        child: FaIcon(FontAwesomeIcons.plus)
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -34,8 +42,64 @@ class _MainPageState extends State<MainPage> {
                   onPressed: () {}, 
                   icon: FaIcon(FontAwesomeIcons.arrowDown)
                 ),
+                DropdownButton(
+                  value: dropdownValue,
+                  items: dropdownOptions
+                    .map(
+                      (e) => DropdownMenuItem(
+                        value: e,
+                        child: Text(e)
+                      ),
+                    )
+                    .toList(), 
+                  onChanged: (newValue) {
+                    setState(() {
+                      dropdownValue = newValue!;
+                    });
+                  }
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: () {}, 
+                  icon: FaIcon(FontAwesomeIcons.bars),
+                ),
               ],
-            )
+            ),
+            Expanded(
+              child: GridView.builder(
+                itemCount: 15,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, 
+                crossAxisSpacing: 4, 
+                mainAxisSpacing: 4
+                ), 
+                itemBuilder: (context, int index) {
+                  // ignore: avoid_unnecessary_containers
+                  return Container(
+                    child: Column(
+                      children: [
+                        Text("Thought tile here..."),
+                        Row(
+                          children: [
+                            // ignore: avoid_unnecessary_containers
+                            Container(
+                              child: Text("First Chip"),
+                            ),
+                          ],
+                        ),
+                        Text("Some Content"),
+                        Row(
+                          children: [
+                            Text('09 Jan, 2025'),
+                            FaIcon(FontAwesomeIcons.trash),
+                          ],
+                        ),
+                      ], 
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
