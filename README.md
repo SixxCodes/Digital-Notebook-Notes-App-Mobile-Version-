@@ -11,8 +11,8 @@
 * **Day 1:** Set up Flutter and VSCode on PC
   <br/><img src="images/1.png" alt="Day 1 update images" width="500">
 * **Day 2:** Learned basic Flutter widgets. Added Notes' UI. Styled App Bar Menu
-  <br/><img src="images/2.png" alt="Day 1 update images" width="300">
-  <img src="images/3.png" alt="Day 1 update images" width="500">
+  <br/><img src="images/2.png" alt="Day 1 update images" width="400">
+  <img src="images/3.png" alt="Day 1 update images" width="400">
   <img src="images/4.png" alt="Day 1 update images" width="700">
 
 ### YT Tutorials that I watched:
