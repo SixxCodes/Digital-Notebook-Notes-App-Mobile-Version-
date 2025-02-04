@@ -6,6 +6,7 @@
 
 ## ✨ Status: 
 * Ongoing
+* Slow Update
 
 ## 💬 Documentation (Started: February 1, 2025. Finished: ) 💬
 * **Day 1:** Set up Flutter and VSCode on PC
