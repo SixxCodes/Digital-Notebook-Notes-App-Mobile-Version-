@@ -16,10 +16,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown),
         useMaterial3: true,
+        fontFamily: 'Poppins',
+        scaffoldBackgroundColor: primary,
         appBarTheme: Theme.of(context).appBarTheme.copyWith(
-          backgroundColor: Colors.transparent, titleTextStyle: TextStyle(
+          backgroundColor: secondary, 
+          titleTextStyle: TextStyle(
             color: primary, 
             fontSize: 32,
+            fontFamily: 'Fredoka',
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

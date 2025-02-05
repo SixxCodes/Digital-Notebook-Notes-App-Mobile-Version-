@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'constants.dart';
+
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
@@ -23,7 +25,17 @@ class _MainPageState extends State<MainPage> {
           IconButton(
             onPressed: () {}, 
             icon: FaIcon(FontAwesomeIcons.rightFromBracket),
-          )
+            style: IconButton.styleFrom(
+              backgroundColor: primary, 
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: BorderSide(
+                  color: Colors.black,
+                ),
+              )
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton.large(
@@ -38,6 +50,12 @@ class _MainPageState extends State<MainPage> {
               decoration: InputDecoration(
                 labelText: "Search Thoughts...",
                 prefixIcon: Icon(Icons.search),
+                fillColor: Colors.white,
+                filled: true,
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: primary)
+                ),
               ),
             ),
             Row(
