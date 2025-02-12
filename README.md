@@ -1,4 +1,4 @@
-# 🌱 ThoughtNest (Notes App) Mobile version 🌱
+# 🌱 ThoughtNest (Notes App) Mobile version 
 
 * Dart & Flutter
 * Firebase?
