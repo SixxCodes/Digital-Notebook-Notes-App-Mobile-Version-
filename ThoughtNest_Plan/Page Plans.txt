@@ -1,0 +1,6 @@
+# Page Plans
+1. Logo Page
+2. Get Started Page
+3. Log in and Sign up Page
+4. Home
+5. Notes (Create, Read, Update, Delete)
