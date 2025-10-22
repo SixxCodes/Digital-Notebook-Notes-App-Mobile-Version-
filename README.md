@@ -4,6 +4,9 @@
 * Firebase?
 * VSCode
 
+## Figma Link (UI/UX Design):
+https://www.figma.com/design/jzd3ySC8UYkzCGot1DQx7F/ThoughtNest-Mobile-ver.?node-id=32-42&p=f&t=0N3zfx36aBXKx6Zi-0
+
 ## ✨ Status: 
 * Ongoing
 * Slow Update
